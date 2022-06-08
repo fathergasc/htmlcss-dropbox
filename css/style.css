@@ -22,6 +22,10 @@ a {
     text-decoration: none;
 }
 
+i {
+    margin-right: 5px;
+}
+
 .blue-button {
     background-color: #0061ff;
     color: white;
@@ -36,6 +40,10 @@ a {
 
 .blue-button.big-btn {
     padding: 10px 10px;
+}
+
+.blue-text {
+    color: #0061ff;
 }
 
 /*inizio header-top*/
@@ -182,7 +190,7 @@ span.blue-button {
 /*inizio plans section*/
 
 .plans.section {
-    margin-top: 90px; /*per non far sovrapporre l'immagine con la sezione inferiore*/
+    margin-top: 140px; /*per non far sovrapporre l'immagine con la sezione inferiore*/
     height: 150vh;
 }
 
@@ -205,12 +213,12 @@ span.blue-button {
 }
 
 .plans-title {
-    height: 7%;
+    height: 5%;
     font-size: 25px;
 }
 
 .monthly-yearly-container{
-    height: 5%;
+    height: 4%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -225,6 +233,13 @@ span.blue-button {
 .plan-card {
     height: 100%;
     width: calc(90% / 3);
+    border: 1px solid lightgray;
+}
+
+.div90 {
+    width: 90%;
+    height: 95%;
+    margin: 0 auto;
 }
 
 .plan-card-title, .plan-card-price, .plan-card-top, .plan-card-middle, .plan-card-bottom {
@@ -233,26 +248,140 @@ span.blue-button {
 
 .plan-card-title {
     height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    
 }
 
 .plan-card-price {
-    height: 15%;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.price, .frequency, .row span, .plan-card-middle span, .plan-card-title span, #p-div95left, .div95right .blue-button.big-btn{
+    font-size: 12px;
+    display: block;
+}
+
+.price {
+    font-weight: bold;
+}
+
+.frequency {
+    color: gray;
 }
 
 .plan-card-top {
     height: 25%;
+    padding-top: 25px;
+}
+
+.plan-card-top, .plan-card-middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.row {
+    margin: 10px 0;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .plan-card-middle {
-    height: 15%;
+    height: 25%;
+    padding-top: 35px;
+}
+
+.plan-card-middle a {
+    color:#0061ff
+}
+
+.small-hr {
+    background-color: white;
+    height: 1px;
+    width: 40px;
+    border-bottom: 1px solid lightgray;
 }
 
 .plan-card-bottom {
     height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+} 
+
+h6 {
+    margin-top: 20px;
+}
+
+.enterprise-card {
+    height: 23%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .enterprise-container {
-    height: 20%;
+    width: 100%;
+    height: 88%;
+    border: 1px solid lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.plan-card-title.enterprise-title {
+    height: 15%;
+    width: 100%;
+}
+
+#enterprise-title, #contact-us  {
+    margin-top: 20px;
+}
+
+#contact-us {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+.div95{
+    width: 98%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div95left {
+    width: 60%;
+    height: 100%;
+}
+
+#p-div95left {
+    margin-top: 45px;
+}
+
+.div95right {
+    width: 40%;
+    height: 100%;
+    position: relative;
+}
+
+.div95right a {
+    position: absolute;
+    top: 30px;
+    right: 7px;
+}
+
+.div95right .blue-button.big-btn {
+    padding: 10px 30px;
 }
 
 /*fine plans section*/
