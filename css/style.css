@@ -71,15 +71,17 @@ header li a{
     padding: 0px 5px;
 }
 
-.blue-button {
-    
+.logo {
+    display: inline-block;
+    line-height: 69px; /*69 invece di 70 perché altrimenti mi risultava il div di 71px per motivi che non so, inoltre mi lasciava un px quando andavo in hover tra il margine inferiore dell'header-top e il border-bottom */
+    padding: px 5px;
 }
 
 .header-top-r {
     text-align: right;
 }
 
-.nav-li img {
+.logo img {
     vertical-align: middle;
     height: 25px;
     margin-bottom: 5px;  /* necessario per allineare l'img, anche se nell'esempio non è perfettamente allineata */
