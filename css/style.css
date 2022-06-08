@@ -394,14 +394,42 @@ h6 {
     justify-content: center;
 }
 
-.partners-img {
+.partners-img{
     width: 60%;
     height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.partners-img img {
+    width: 100%;
 }
 
 .partners-text {
     width: 40%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+}
+
+.partners-text p {
+    margin-top: 20px;
+}
+
+.white-button-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+.white-button-container a{
+    border: 1px solid black;
+    padding: 10px 10px;
+    color: black;
+    text-align: center;
 }
 
 
@@ -552,16 +580,18 @@ footer {
 .debug .plans {
     background-color: green;
 }
+
+
+.debug .partners {
+    background-color: yellow;
+}
+
 */
 
 
 
 * {
     border: 1px dotted black;
-}
-
-.debug .partners {
-    background-color: yellow;
 }
 
 .debug .features {
