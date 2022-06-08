@@ -30,6 +30,10 @@ a {
     padding: 4px 10px;
 }
 
+.blue-button:hover {
+    background-color: #0062ff88;
+}
+
 .blue-button.big-btn {
     padding: 10px 10px;
 }
@@ -165,6 +169,8 @@ span.blue-button {
 
 /*fine jumbo*/
 
+
+
 /*inizio main*/
 
 .section {
@@ -172,25 +178,46 @@ span.blue-button {
     margin: 50px auto;
 }
 
-.plans.section {
-    margin-top: 90px; /*per non far sovrapporre l'immagine con la sezione inferiore*/
-}
 
 /*inizio plans section*/
-.plans {
+
+.plans.section {
+    margin-top: 90px; /*per non far sovrapporre l'immagine con la sezione inferiore*/
     height: 150vh;
 }
 
+.circle {
+    height: 20px;
+    width: 20px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    background-color: white;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.blue-circle {
+    border: 5px solid #0061ff;
+}
+
+.monthly-yearly-container span {
+    margin: 0 10px
+}
+
 .plans-title {
-    height: 10%;
+    height: 7%;
+    font-size: 25px;
 }
 
 .monthly-yearly-container{
     height: 5%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .plans-cards-container {
-    height: 65%;
+    height: 68%;
     display: flex;
     justify-content: space-between;
 }
@@ -198,6 +225,30 @@ span.blue-button {
 .plan-card {
     height: 100%;
     width: calc(90% / 3);
+}
+
+.plan-card-title, .plan-card-price, .plan-card-top, .plan-card-middle, .plan-card-bottom {
+    width: 100%;
+}
+
+.plan-card-title {
+    height: 5%;
+}
+
+.plan-card-price {
+    height: 15%;
+}
+
+.plan-card-top {
+    height: 25%;
+}
+
+.plan-card-middle {
+    height: 15%;
+}
+
+.plan-card-bottom {
+    height: 40%;
 }
 
 .enterprise-container {
@@ -352,9 +403,6 @@ footer {
 
 /* debug rules disattivate temporaneamente
 
-* {
-    border: 1px dotted black;
-}
 
 .debug .header-top {
     background-color: red;
@@ -372,12 +420,15 @@ footer {
     background-color: grey;
 }
 
-
+.debug .plans {
+    background-color: green;
+}
 */
 
 
-.debug .plans {
-    background-color: green;
+
+* {
+    border: 1px dotted black;
 }
 
 .debug .partners {
