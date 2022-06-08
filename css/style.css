@@ -177,14 +177,46 @@ body {
 
 /*fine features section*/
 
+/*inizio bottom section*/
 
 .bottom {
     height: 30vh;
 }
 
+/*fine bottom section*/
+
+/*inizio testimonials section*/
+
 .testimonials {
-    height: 92vh;
+    height: 95vh;
 }
+
+.testimonials-top {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.testimonials-top-square {
+    width: calc(100vw / 3);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.testimonial-card {
+    width: calc(100% / 2);
+    height: 50%;
+}
+
+.testimonials-bottom {
+    height: 30%;
+    width: 100vw;
+}
+
+/*fine testimonials section*/
 
 .faq {
     height: 44vh;
