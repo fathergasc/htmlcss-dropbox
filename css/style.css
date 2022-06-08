@@ -9,6 +9,10 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+.fullwidth-section {
+    width: 100%;
+}
+
 .header-top {
     width: 100%;
     height: 8vh;
@@ -42,11 +46,42 @@ body {
 }
 
 .jumbo {
-    height: 70vh;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative
 }
 
-.fullwidth {
+.jumbo-container {
+    height: 85%;
+    width: 60%;
+    position: absolute;
+    bottom: -60px;
+}
+
+.jumbo-title {
     width: 100%;
+    height: 30%;
+}
+
+.jumbo-container-bottom {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+}
+
+.jumbo-container-bottom-left, .jumbo-container-bottom-right {
+    height: 100%;
+}
+
+.jumbo-container-bottom-left {
+    width: 35%;
+}
+
+.jumbo-container-bottom-right {
+    width: 65%;
 }
 
 .section {
@@ -84,21 +119,25 @@ footer {
 
 
 /* debug rules */
+
+* {
+    border: 1px dotted black;
+}
+
 .debug .header-top {
     background-color: red;
 }
 
 .debug .header-top-l, .debug .header-top-r {
     background-color: aquamarine;
-    border: 1px dotted black;
-}
-
-.debug .logo-header, .debug .nav-header-left, .debug .nav-header-right {
-    border: 1px dotted rgb(0, 0, 0);
 }
 
 .debug .jumbo {
     background-color: blue;
+}
+
+.jumbo-container {
+    background-color: grey;
 }
 
 .debug .plans {
