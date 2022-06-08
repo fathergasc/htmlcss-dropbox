@@ -188,7 +188,8 @@ body {
 /*inizio testimonials section*/
 
 .testimonials {
-    height: 95vh;
+    height: 100vh
+    width: 100vw;
 }
 
 .testimonials-top {
@@ -199,8 +200,8 @@ body {
 }
 
 .testimonials-top-square {
-    width: calc(100vw / 3);
-    height: 100%;
+    width: calc(100% / 3);
+    height: 70vh;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -208,25 +209,62 @@ body {
 
 .testimonial-card {
     width: calc(100% / 2);
-    height: 50%;
+    height: calc(100% / 2);
 }
 
 .testimonials-bottom {
-    height: 30%;
-    width: 100vw;
+    height: 30vh;
+    width: 100%;
+}
+
+.testimonials-bottom-container {
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
 }
 
 /*fine testimonials section*/
 
+/*inizio faq section*/
+
 .faq {
     height: 44vh;
 }
+
+.faq-title, .faq-item {
+    height: 25%;
+}
+
+/*inizio faq section*/
+
 /*fine main*/
 
 footer {
     height: 44vh;
 }
 
+.footer-container {
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.footer-top {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-list {
+    width: calc(95% / 5);
+    height: 100%;
+}
+
+.footer-bottom {
+    height: 20%;
+    width: 100%;
+}
 
 /* debug rules */
 
@@ -268,6 +306,10 @@ footer {
 
 .debug .testimonials {
     background-color: aqua;
+}
+
+.testimonials-bottom-container {
+    background-color: bisque;
 }
 
 .debug .faq{
