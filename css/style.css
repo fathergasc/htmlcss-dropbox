@@ -5,9 +5,93 @@
 }
 
 body {
+    margin: 0 auto;
     font-family: 'Open Sans', sans-serif;
 }
 
-/* debug rules */
+.header-top {
+    width: 100%;
+    height: 8vh;
+    position: fixed;
+    z-index: 999;
+}
 
+.jumbo {
+    height: 70vh;
+}
+
+.fullwidth {
+    width: 100%;
+}
+
+.section {
+    width: 50%;
+    margin: 0 auto; /*da rimuovere quando capisco perché non sta ereditando da body*/
+}
+
+.plans {
+    height: 120vh;
+}
+
+.partners {
+    height: 60vh;
+}
+
+.features {
+    height: 92vh;
+}
+
+.bottom {
+    height: 30vh;
+}
+
+.testimonials {
+    height: 92vh;
+}
+
+.faq {
+    height: 44vh;
+}
+
+footer {
+    height: 44vh;
+}
+
+
+/* debug rules */
+.debug .header-top {
+    background-color: red;
+}
+
+.debug .jumbo {
+    background-color: blue;
+}
+
+.debug .plans {
+    background-color: green;
+}
+
+.debug .partners {
+    background-color: yellow;
+}
+
+.debug .features {
+    background-color: rgb(255, 0, 212);
+}
+
+.debug .bottom {
+    background-color: brown;
+}
+
+.debug .testimonials {
+    background-color: aqua;
+}
+
+.debug .faq{
+    background-color: teal;
+}
+
+.debug footer {
+    background-color: darkolivegreen;
+}
 /* end debug rules */
