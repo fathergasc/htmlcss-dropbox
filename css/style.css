@@ -14,6 +14,31 @@ body {
     height: 8vh;
     position: fixed;
     z-index: 999;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-top-l, .header-top-r {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-header, .nav-header-left, .nav-header-right {
+    height: 100%;
+}
+
+.logo-header {
+    width: 25%;
+}
+
+.nav-header-left {
+    width: 75%;
+}
+
+.nav-header-right {
+    width: 100%;
 }
 
 .jumbo {
@@ -61,6 +86,15 @@ footer {
 /* debug rules */
 .debug .header-top {
     background-color: red;
+}
+
+.debug .header-top-l, .debug .header-top-r {
+    background-color: aquamarine;
+    border: 1px dotted black;
+}
+
+.debug .logo-header, .debug .nav-header-left, .debug .nav-header-right {
+    border: 1px dotted rgb(0, 0, 0);
 }
 
 .debug .jumbo {
