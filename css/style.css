@@ -9,10 +9,11 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-.fullwidth-section {
+.fullwidth {
     width: 100%;
 }
 
+/*inizio header-top*/
 .header-top {
     width: 100%;
     height: 8vh;
@@ -44,6 +45,9 @@ body {
 .nav-header-right {
     width: 100%;
 }
+/*fine header-top*/
+
+/*inizio jumbo*/
 
 .jumbo {
     height: 80vh;
@@ -84,14 +88,48 @@ body {
     width: 65%;
 }
 
+/*fine jumbo*/
+
+/*inizio main*/
+
 .section {
     width: 50%;
-    margin: 0 auto; /*da rimuovere quando capisco perché non sta ereditando da body*/
+    margin: 50px auto;
 }
 
-.plans {
-    height: 120vh;
+.plans.section {
+    margin-top: 90px; /*per non far sovrapporre l'immagine con la sezione inferiore*/
 }
+
+/*inizio plans section*/
+.plans {
+    height: 150vh;
+}
+
+.plans-title {
+    height: 10%;
+}
+
+.monthly-yearly-container{
+    height: 5%;
+}
+
+.plans-cards-container {
+    height: 65%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.plan-card {
+    height: 100%;
+    width: calc(90% / 3);
+}
+
+.enterprise-container {
+    height: 20%;
+}
+
+/*fine plans section*/
 
 .partners {
     height: 60vh;
@@ -112,6 +150,7 @@ body {
 .faq {
     height: 44vh;
 }
+/*fine main*/
 
 footer {
     height: 44vh;
