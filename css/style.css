@@ -131,13 +131,52 @@ body {
 
 /*fine plans section*/
 
+/*inizio partners section*/
+
 .partners {
     height: 60vh;
+    display: flex;
+    justify-content: center;
 }
 
-.features {
-    height: 92vh;
+.partners-img {
+    width: 60%;
+    height: 100%;
 }
+
+.partners-text {
+    width: 40%;
+    height: 100%;
+}
+
+
+/*fine partners section*/
+
+/*inizio features section*/
+
+.features {
+    height: 100vh;
+}
+
+.features-title {
+    height: 10%;
+}
+
+.features-cards-container {
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    width: calc(90% / 3);
+    height: 50%;
+}
+
+/*fine features section*/
+
 
 .bottom {
     height: 30vh;
