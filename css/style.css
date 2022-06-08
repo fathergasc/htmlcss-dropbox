@@ -7,49 +7,105 @@
 body {
     margin: 0 auto;
     font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
 }
 
 .fullwidth {
     width: 100%;
 }
 
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.blue-button {
+    background-color: #0061ff;
+    color: white;
+    text-align: center;
+    display: inline;
+    padding: 4px 10px;
+}
+
+.blue-button.big-btn {
+    padding: 10px 10px;
+}
+
 /*inizio header-top*/
+header li a{
+    color: black;
+    font-size: 14px;
+    display: inline-block;
+}
+
+#header-button {
+    color: white;
+    padding: 4px, 10px
+}
+
 .header-top {
+    background-color: white;
     width: 100%;
-    height: 8vh;
+    height: 70px;
     position: fixed;
     z-index: 999;
     display: flex;
     justify-content: space-between;
+    top: 0;
+    left: 0;
 }
 
 .header-top-l, .header-top-r {
-    width: 25%;
+    width: 35%;
     height: 100%;
-    display: flex;
-    justify-content: center;
+    line-height: 70px;
+    margin: 0 20px;
 }
 
-.logo-header, .nav-header-left, .nav-header-right {
+.nav-li {
+    display: inline-block;
+    line-height: 69px; /*69 invece di 70 perché altrimenti mi risultava il div di 71px per motivi che non so, inoltre mi lasciava un px quando andavo in hover tra il margine inferiore dell'header-top e il border-bottom */
+    padding: 0px 5px;
+}
+
+.blue-button {
+    
+}
+
+.header-top-r {
+    text-align: right;
+}
+
+.nav-li img {
+    vertical-align: middle;
+    height: 25px;
+    margin-bottom: 5px;  /* necessario per allineare l'img, anche se nell'esempio non è perfettamente allineata */
+}
+
+.nav-header-left, .nav-header-right {
     height: 100%;
 }
 
-.logo-header {
-    width: 25%;
+li.nav-li:hover {
+    border-bottom: 3px solid rgb(0, 70, 70);
 }
 
-.nav-header-left {
-    width: 75%;
+#header-button {
+    border-bottom: white;
 }
 
-.nav-header-right {
-    width: 100%;
-}
 /*fine header-top*/
+
+
+
 
 /*inizio jumbo*/
 
 .jumbo {
+    background-color: #b4d0e7;
     height: 80vh;
     display: flex;
     justify-content: center;
@@ -67,6 +123,7 @@ body {
 .jumbo-title {
     width: 100%;
     height: 30%;
+    font-size: 30px;
 }
 
 .jumbo-container-bottom {
@@ -82,10 +139,26 @@ body {
 
 .jumbo-container-bottom-left {
     width: 35%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+span.blue-button {
+    width: 250px;
+}
+
+.fa-solid.fa-arrow-down {
+    font-size: 50px;
+    color: black;
 }
 
 .jumbo-container-bottom-right {
     width: 65%;
+}
+.jumbo-container-bottom-right img {
+    height: 100%;
 }
 
 /*fine jumbo*/
@@ -239,6 +312,9 @@ body {
 
 /*fine main*/
 
+
+/*inizio footer*/
+
 footer {
     height: 44vh;
 }
@@ -266,7 +342,13 @@ footer {
     width: 100%;
 }
 
-/* debug rules */
+/*fine footer*/
+
+
+
+/* inizio debug rules */
+
+/* debug rules disattivate temporaneamente
 
 * {
     border: 1px dotted black;
@@ -287,6 +369,10 @@ footer {
 .jumbo-container {
     background-color: grey;
 }
+
+
+*/
+
 
 .debug .plans {
     background-color: green;
