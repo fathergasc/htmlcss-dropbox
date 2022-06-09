@@ -317,8 +317,8 @@ span.blue-button {
 }
 
 .small-hr {
-    background-color: white;
-    height: 1px;
+    background-color: transparent;
+    height: 30px;
     width: 40px;
     border-bottom: 1px solid lightgray;
 }
@@ -507,21 +507,21 @@ h6 {
 
 /*fine bottom section*/
 
-/*inizio testimonials section*/
+/*inizio customers section*/
 
-.testimonials {
+.customers {
     height: 100vh;
     width: 100%;    /*se metto vw mi lascia uno spazio bianco alla destra del body */
 }
 
-.testimonials-top {
+.customers-top {
     height: 70%;
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.testimonials-top-square {
+.customers-top-square {
     width: calc(100% / 3);
     height: calc(100vw / 3);
     display: flex;
@@ -529,23 +529,92 @@ h6 {
     flex-wrap: wrap;
 }
 
-.testimonial-card {
-    width: calc(100% / 2);
-    height: calc(100% / 2);
+.customer-card {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.testimonials-bottom {
+.customer-card img {
+    width: 50%;
+    filter: invert(93%) sepia(0%) saturate(7481%) hue-rotate(210deg) brightness(111%) contrast(107%);;
+}
+
+#center-top-square {
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 30px;
+}
+
+#center-top-square img {
+    width: 40%;
+}
+
+#center-top-square img, .center-top-square .small-hr, .center-top-square p, .center-top-square h6 {
+    margin-bottom: 70px;
+}
+
+#center-top-square span {
+    font-size: 14px;
+    margin-top: 70px;
+}
+
+.big-hr {
+    background-color: transparent;
+    height: 50px;
+    width: 100px;
+    border-top: 1px solid lightgray;
+}
+
+
+#green-card {
+    background-color: #a2d39b;
+}
+
+#burgundy-card {
+    background-color: #61082b;
+}
+
+#turquoise-card {
+    background-color: #0093ce;
+}
+
+#red-card {
+    background-color: #ff1c1c;
+}
+
+#darkred-card {
+    background-color: #d5001f;
+}
+
+#lightblue-card {
+    background-color: #b4d0e7;
+}
+
+#darkblue-card {
+    background-color: #0d2481;
+}
+
+#yellow-card {
+    background-color: #ffd830;
+}
+
+.customers-bottom {
     height: 30%;
     width: 100%;
 }
 
-.testimonials-bottom-container {
+.customers-bottom-container {
     width: 50%;
     height: 100%;
     margin: 0 auto;
 }
 
-/*fine testimonials section*/
+/*fine customers section*/
 
 /*inizio faq section*/
 
@@ -633,22 +702,19 @@ footer {
     background-color: brown;
 }
 
-.debug .testimonials {
+.debug .customers {
     background-color: aqua;
 }
 
-.testimonials-bottom-container {
+.customers-bottom-container {
     background-color: bisque;
 }
-
 
 * {
     border: 1px dotted black;
 }
 
-
 */
-
 
 
 
