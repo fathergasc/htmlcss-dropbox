@@ -277,7 +277,7 @@ span.blue-button {
     justify-content: space-around;
 }
 
-.price, .frequency, .row span, .plan-card-middle span, .plan-card-title span, #p-div95left, .div95right .blue-button.big-btn{
+.price, .frequency, .row span, .plan-card-middle span, .plan-card-title span, #p-div95left, .div95right .blue-button.big-btn, .bottom.section a{
     font-size: 12px;
     display: block;
 }
@@ -490,6 +490,19 @@ h6 {
 
 .bottom {
     height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.bottom.section a {
+    text-decoration: underline;
+    padding-bottom: 50px;
+    color: #0061ff;
+}
+
+.bottom.section h2 {
+    padding-top: 60px;
 }
 
 /*fine bottom section*/
@@ -616,16 +629,6 @@ footer {
     background-color: rgb(255, 0, 212);
 }
 
-
-
-*/
-
-
-* {
-    border: 1px dotted black;
-}
-
-
 .debug .bottom {
     background-color: brown;
 }
@@ -637,6 +640,17 @@ footer {
 .testimonials-bottom-container {
     background-color: bisque;
 }
+
+
+* {
+    border: 1px dotted black;
+}
+
+
+*/
+
+
+
 
 .debug .faq{
     background-color: teal;
