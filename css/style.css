@@ -655,14 +655,15 @@ h6 {
 /*inizio faq section*/
 
 .faq {
-    height: 44vh;
-    display: flex;
-    flex-direction: column;
+    height: 60vh;
 }
 
 .faq-title, .faq-item, #answer1, #answer2, #answer3 {
-    height: calc(100% / 4);
-    border-bottom: 1px solid lightgray;
+    height: calc(100% / 5);
+}
+
+.faq-item, #answer1, #answer2, #answer3 {
+    border-top: 1px solid lightgray;
 }
 
 .faq-item {
@@ -671,23 +672,24 @@ h6 {
     align-items: center;
 }
 
-#answer1, #answer2, #answer3 {
+.answer-1, .answer-2, .answer-3 {
     display: none;
 }
 
-#q1:hover #answer1 {
-    display: block;
+.faq-item:hover + .answer-1, .faq-item:hover + .answer-2, .faq-item:hover + .answer-3{
+    display: block;    
 }
 
-#q2:hover #answer2 {
-    display: block;
+.faq-item:hover i {
+    animation: rotate 0.5s linear;
+    animation-fill-mode: forwards;
 }
 
-#q3:hover #answer3 {
-    display: block;
+@keyframes rotate {
+    100% {
+        transform: rotate(180deg)
+    }
 }
-
-
 /*inizio faq section*/
 
 /*fine main*/
@@ -772,6 +774,11 @@ footer {
     background-color: bisque;
 }
 
+
+.debug .faq{
+    background-color: teal;
+}
+
 * {
     border: 1px dotted black;
 }
@@ -780,9 +787,6 @@ footer {
 
 
 
-.debug .faq{
-    background-color: teal;
-}
 
 .debug footer {
     background-color: darkolivegreen;
