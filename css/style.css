@@ -698,7 +698,8 @@ h6 {
 /*inizio footer*/
 
 footer {
-    height: 44vh;
+    height: 55vh;
+    background-color: #000;
 }
 
 .footer-container {
@@ -708,20 +709,57 @@ footer {
 }
 
 .footer-top {
-    height: 80%;
+    height: 60%;
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
+.footer-list a, .footer-list ul {
+    color: white;
+}
+
 .footer-list {
     width: calc(95% / 5);
-    height: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .footer-bottom {
     height: 20%;
     width: 100%;
+    color: white;
+}
+
+.footer-bottom a {
+    color: white;
+}
+
+.list-title {
+    padding-top: 20px;
+    height: 20%;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.footer-list ul {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.footer-list li {
+    margin-top: 10px;
+}
+
+.footer-bottom .big-hr {
+    margin-top: 70px;
 }
 
 /*fine footer*/
@@ -783,12 +821,14 @@ footer {
     border: 1px dotted black;
 }
 
+.debug footer {
+    background-color: darkolivegreen;
+}
+
 */
 
 
 
 
-.debug footer {
-    background-color: darkolivegreen;
-}
+
 /* end debug rules */
