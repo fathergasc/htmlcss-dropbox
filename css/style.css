@@ -656,11 +656,37 @@ h6 {
 
 .faq {
     height: 44vh;
+    display: flex;
+    flex-direction: column;
 }
 
-.faq-title, .faq-item {
-    height: 25%;
+.faq-title, .faq-item, #answer1, #answer2, #answer3 {
+    height: calc(100% / 4);
+    border-bottom: 1px solid lightgray;
 }
+
+.faq-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#answer1, #answer2, #answer3 {
+    display: none;
+}
+
+#q1:hover #answer1 {
+    display: block;
+}
+
+#q2:hover #answer2 {
+    display: block;
+}
+
+#q3:hover #answer3 {
+    display: block;
+}
+
 
 /*inizio faq section*/
 
