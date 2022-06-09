@@ -70,7 +70,6 @@ header li a{
 
 #header-button {
     color: white;
-    padding: 4px, 10px
 }
 
 .header-top {
@@ -101,7 +100,7 @@ header li a{
 .logo {
     display: inline-block;
     line-height: 69px; /*69 invece di 70 perché altrimenti mi risultava il div di 71px per motivi che non so, inoltre mi lasciava un px quando andavo in hover tra il margine inferiore dell'header-top e il border-bottom */
-    padding: px 5px;
+    padding: 0px 5px;
 }
 
 .header-top-r {
