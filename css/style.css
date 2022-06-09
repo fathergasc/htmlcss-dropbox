@@ -432,6 +432,9 @@ h6 {
     text-align: center;
 }
 
+.white-button-container a:hover {
+    background-color: rgb(206, 206, 206);
+}
 
 /*fine partners section*/
 
