@@ -537,6 +537,10 @@ h6 {
     align-items: center;
 }
 
+.customer-card:active {
+    border: 20px solid rgba(255, 255, 255, 0.534);
+}
+
 .customer-card img {
     width: 50%;
     filter: invert(93%) sepia(0%) saturate(7481%) hue-rotate(210deg) brightness(111%) contrast(107%);;
@@ -548,6 +552,7 @@ h6 {
     flex-direction: column;
     justify-content: flex-start;
     padding: 30px;
+    overflow: auto;
 }
 
 #center-top-square img {
